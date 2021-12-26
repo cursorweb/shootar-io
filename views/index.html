@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shootar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="p5/p5.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="classes/user.js"></script>
+    <script src="classes/bullet.js"></script>
+
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="header">Shootar.io</div>
+
+    <div class="flex">
+        <div class="sub">This shootar is called...</div>
+
+        <div class="flex-horiz">
+            <input type="text" class="name">
+            <button class="btn green start">Play (enter)</button>
+        </div>
+    </div>
+    
+
+    <div class="lose">
+        <div class="header">You died!</div>
+        <div class="sub">You will respawn with <span class="score">0</span> score.</div>
+        <button class="btn blue start">Respawn (enter)</button>
+    </div>
+
+    <script src="ui.js"></script>
+</body>
+</html>
